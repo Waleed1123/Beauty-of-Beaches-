@@ -222,6 +222,10 @@ header {
 
 
 /* Carousel CSS */
+
+.hero-container{
+  padding-top: 80px;
+}
 .carocel-container {
   width: 100%;
   height: 80vh;

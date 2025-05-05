@@ -1,0 +1,26 @@
+✔Edit navbar 
+✔Cards set krne hein home page pr
+✔East west wali headings ko zone krna hai or 
+✔heading ko centre krna hai spacing kam krni hai
+
+✔About us ka pora page edit hoga
+
+✔gallery me overlay pr location dalni hai 
+
+✔feedback ki theme change hogi
+
+
+New Changes
+
+
+Navbar ko edit karna ha
+
+Responsive per kam karna ha
+
+Feedback ma Navbar nai chal raha 
+
+Contact na sweetalert dalna hah
+
+Footer ma download button set karna hah usko  edit kara hah
+
+User per login form banana hah

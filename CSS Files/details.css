@@ -1,0 +1,515 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Poppins", sans-serif;
+    text-decoration: none;
+    list-style: none;
+}
+
+body {
+    font-family: "Poppins", Arial, sans-serif;
+    background: #fff;
+    font-size: 14px;
+    line-height: 1.8;
+    font-weight: 300;
+    color: #4d4d4d;
+    background-color: #fefffe;
+    overflow-x: hidden;
+}
+
+
+header {
+    width: 100%;
+    background-color: #162839;
+  }
+  
+  .nav-container {
+    display: flex;
+    justify-content: space-between;
+    /* spreads items properly */
+    align-items: center;
+    padding: 0 40px;
+    height: 80px;
+    background-color: #162839;
+    box-shadow: rgba(0, 0, 0, 0.09) 0px 2px 1px,
+      rgba(0, 0, 0, 0.09) 0px 4px 2px,
+      rgba(0, 0, 0, 0.09) 0px 8px 4px,
+      rgba(0, 0, 0, 0.09) 0px 16px 8px,
+      rgba(0, 0, 0, 0.09) 0px 32px 16px;
+  }
+  
+  
+  
+  .logo {
+    display: flex;
+    align-items: center;
+  }
+  
+  .logo a img {
+    width: 70px;
+    transition: transform 0.3s ease;
+  }
+  
+  .logo a img:hover {
+    transform: scale(1.1);
+  }
+  
+  .nav-links {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    font-size: 14px;
+  }
+  
+  .nav-links li {
+    list-style: none;
+    position: relative;
+    transition: transform 0.3s ease;
+  }
+  
+  .nav-links li a {
+    color: #fefffe;
+    font-weight: 400;
+    text-decoration: none;
+    padding: 8px 10px;
+    border-radius: 5px;
+    transition: all 0.3s ease, color 0.3s ease;
+  }
+  
+  .nav-links li a:hover {
+    color: #fff;
+    background-color: #18354f;
+  }
+  
+  .dropdown-menu {
+    display: block;
+    position: absolute;
+    background-color: #162839;
+    border-radius: 5px;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.2);
+    z-index: 1000;
+    transition: opacity 0.3s ease;
+    opacity: 0;
+  }
+  
+  .nav-item:hover .dropdown-menu {
+    display: block;
+    background-color: #162839;
+    opacity: 1;
+  }
+  
+  .dropdown-item {
+    padding: 8px 10px;
+    color: black;
+    text-decoration: none;
+    display: block;
+    transition: background-color 0.3s ease;
+  }
+  
+  .dropdown-item:hover,
+  .dropdown-menu:hover {
+    background-color: #162839;
+    color: white;
+  }
+  
+  .icon-container {
+    display: flex;
+    align-items: center;
+  }
+  
+  .icon-button {
+    background: none;
+    border: none;
+    margin-right: 15px;
+    cursor: pointer;
+    font-size: 18px;
+    color: #fefffe;
+    transition: color 0.3s ease;
+  }
+  
+  .icon-button:hover {
+    color: #173d56;
+  }
+  
+  .icon-button:focus {
+    outline: none;
+  }
+  
+  .menu-toggle {
+    display: none;
+  }
+  
+  .menu-toggle:focus {
+    outline: none;
+  }
+  
+  
+  /* Extra for Alignment */
+  .logo, .nav-links-wrapper, .icon-container {
+    display: flex;
+    align-items: center;
+  }
+  
+  .logo {
+    flex: 1;
+  }
+  
+  .nav-links-wrapper {
+    flex: 2;
+    justify-content: center;
+  }
+  
+  .icon-container {
+    flex: 1;
+    justify-content: flex-end;
+  }
+  
+  
+  @media (max-width: 800px) {
+    .nav-container {
+      display: flex;
+      justify-content: space-around;
+      padding: 10px;
+    }
+  
+    .nav-links {
+      display: none;
+      flex-direction: column;
+      position: absolute;
+      top: 80px;
+      left: 0;
+      right: 0;
+      background-color: #162839;
+      z-index: 999;
+    }
+  
+    .logo a img {
+      width: 70px;
+      transition: transform 0.3s ease;
+    }
+  
+    .icon-button {
+      display: none;
+    }
+  
+    .nav-links.active {
+      display: flex;
+    }
+  
+    .nav-links li {
+      margin: 10px 0;
+    }
+  
+    .menu-toggle {
+      display: block;
+      background: none;
+      border: none;
+      color: #fefffe;
+      font-size: 28px;
+      cursor: pointer;
+    }
+  
+    .menu-toggle {
+      display: block;
+    }
+  }
+  
+  
+/* Navbar Code Ends Here! */
+
+
+/* Advertisement Section CSS Starts Here! */
+
+.travel-ads-section {
+    background: #fff4e6;
+    padding: 50px 20px;
+    text-align: center;
+}
+
+.section-title {
+    font-size: 2em;
+    margin-bottom: 30px;
+    color: #d35400;
+}
+
+.travel-cards {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 30px;
+}
+
+.travel-card {
+    background: white;
+    border-radius: 15px;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+    overflow: hidden;
+    width: 300px;
+    transition: transform 0.3s ease;
+}
+
+.travel-card:hover {
+    transform: translateY(-5px);
+}
+
+.travel-card img {
+    width: 100%;
+    height: auto;
+}
+
+.travel-info {
+    padding: 20px;
+}
+
+.travel-info h3 {
+    color: #2c3e50;
+    margin-bottom: 10px;
+}
+
+.travel-info p {
+    font-size: 1.1em;
+    margin-bottom: 15px;
+    color: #34495e;
+}
+
+.strike {
+    text-decoration: line-through;
+    color: #999;
+    font-size: 0.9em;
+    margin-left: 10px;
+}
+
+.btn {
+    background-color: #e67e22;
+    color: white;
+    padding: 10px 20px;
+    border-radius: 25px;
+    text-decoration: none;
+    font-weight: bold;
+    transition: background 0.3s;
+}
+
+.btn:hover {
+    background-color: #d35400;
+}
+
+.container {
+    display: flex;
+    flex-direction: column;
+    max-width: 1000px;
+    background: #fff;
+    margin: 40px auto;
+    border-radius: 15px;
+    box-shadow: 0 10px 20px rgba(0,0,0,0.1);
+    overflow: hidden;
+}
+
+.left {
+    width: 100%;
+    height: auto;
+    max-height: 300px;
+}
+
+.left img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.right {
+    width: 100%;
+    padding: 20px 30px;
+    box-sizing: border-box;
+}
+
+.right-content {
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+}
+
+.right h2 {
+    font-size: 24px;
+    color: #333;
+}
+
+.ratings {
+    color: #f39c12;
+    margin-bottom: 10px;
+}
+
+.location {
+    color: #555;
+}
+
+.description {
+    color: #666;
+    line-height: 1.6;
+    margin-bottom: 15px;
+}
+
+.advertise-form {
+    border-top: 1px solid #ddd;
+    padding-top: 15px;
+}
+
+.advertise-form h3 {
+    margin-bottom: 10px;
+    font-size: 18px;
+    color: #444;
+}
+
+.advertise-form label {
+    display: block;
+    margin: 10px 0 5px;
+    font-weight: 500;
+}
+
+.advertise-form select,
+.advertise-form input {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    margin-bottom: 10px;
+}
+
+.btn {
+    background-color: #3498db;
+    color: white;
+    border: none;
+    padding: 12px 20px;
+    border-radius: 8px;
+    cursor: pointer;
+    font-weight: bold;
+    transition: background 0.3s;
+}
+
+.btn:hover {
+    background-color: #2980b9;
+}
+
+.back-link {
+    display: inline-block;
+    margin-top: 10px;
+    color: #3498db;
+    text-decoration: none;
+}
+
+@media (min-width: 768px) {
+    .container {
+        flex-direction: row;
+        height: auto;
+    }
+
+    .left {
+        width: 50%;
+        max-height: 100%;
+    }
+
+    .right {
+        width: 50%;
+        max-height: 100%;
+        overflow-y: auto;
+    }
+}
+
+@media (max-width: 480px) {
+    .right {
+        padding: 15px 20px;
+    }
+
+    .right h2 {
+        font-size: 20px;
+    }
+
+    .btn {
+        width: 100%;
+        text-align: center;
+    }
+
+    .travel-info h3 {
+        font-size: 1.2em;
+    }
+
+    .travel-info p {
+        font-size: 1em;
+    }
+}
+
+/* Footer */
+
+.footer {
+    background-color: #2c3e50;
+    color: #ffffff;
+    padding: 40px 0;
+    margin-top: 50px;
+}
+
+.footer-container {
+    width: 80%;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+.footer-section {
+    flex: 1;
+    margin: 10px;
+    min-width: 200px;
+}
+
+.footer-section h3 {
+    margin-bottom: 15px;
+    font-size: 20px;
+}
+
+.footer-section p {
+    margin-bottom: 10px;
+}
+
+.footer-section ul {
+    list-style: none;
+    padding: 0;
+}
+
+.footer-section ul li {
+    margin-bottom: 10px;
+}
+
+.footer-section ul li a {
+    cursor: pointer;
+    color: #ffffff;
+    text-decoration: none;
+    padding: 5px 10px;
+    border-radius: 5px;
+    transition: background-color 0.3s;
+}
+
+.footer-section ul li a:hover {
+    background-color: #3498db;
+    color: #ffffff;
+}
+
+.social-icons {
+    display: flex;
+    gap: 15px;
+    margin-top: 10px;
+}
+
+.social-icons i {
+    font-size: 24px;
+    color: #ffffff;
+    cursor: pointer;
+    transition: color 0.3s;
+}
+
+.social-icons i:hover {
+    color: #3498db;
+}
+
+/* Footer end */

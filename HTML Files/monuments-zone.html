@@ -1,0 +1,1082 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Beauty Of Beaches</title>
+    <!-- Custom CSS File -->
+    <link rel="stylesheet" href="../CSS Files/monuments.css">
+    <!-- Bootstrap CSS File -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <!-- Font Awesome CSS File -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"
+        integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300&family=Ubuntu:wght@300&display=swap"
+        rel="stylesheet">
+    <!-- Favicon -->
+    <link rel="icon" href="../Assets/Images/Logo Img.svg" type="image/x-icon">
+
+    <!-- Flickity CDN Link -->
+    <link rel="stylesheet" href="https://unpkg.com/flickity@2/dist/flickity.min.css" />
+
+
+    <!-- jQuery and Bootstrap JS Files -->
+    <!-- <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script> -->
+</head>
+
+<body>
+
+    <!-- Header Session Starts Here -->
+    <header>
+        <nav class="nav-container">
+            <div class="logo">
+                <a href="../index.html"><img src="../Assets/Images/Logo Img.svg" alt="Logo"></a>
+            </div>
+            <div class="nav-links-wrapper">
+                <ul class="nav-links">
+                    <li><a href="../index.html">Home</a></li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="../HTML Files/monuments-zone.html"
+                            id="monumentsDropdown" role="button" data-toggle="dropdown" aria-haspopup="true"
+                            aria-expanded="false">
+                            Monuments Zone
+                        </a>
+                       
+                        <!--Due to Bootstrap Not Working on this page the dropdown is having issues.
+                            So we decided to comment it out.-->
+                        
+                        <div class="dropdown-menu" aria-labelledby="monumentsDropdown">
+                            <a class="dropdown-item" href="../HTML Files/monuments-zone.html">East</a>
+                            <a class="dropdown-item" href="../HTML Files/monuments-zone.html">West</a>
+                            <a class="dropdown-item" href="../HTML Files/monuments-zone.html">North</a>
+                            <a class="dropdown-item" href="../HTML Files/monuments-zone.html">South</a>
+                        </div>
+                    </li>
+                    <li><a href="../HTML Files/about.html">About us</a></li>
+                    <li><a href="../HTML Files/gallery.html">Gallery</a></li>
+                    <li><a href="../HTML Files/feedback.html">Feedback</a></li>
+                    <li><a href="../HTML Files/contact.html">Contact Us</a></li>
+                </ul>
+            </div>
+            <div class="icon-container">
+                <button class="icon-button" aria-label="User Profile">
+                    <i class="fa-solid fa-user"></i>
+                </button>
+                <button class="icon-button" aria-label="Search">
+                    <i class="fa-solid fa-search"></i>
+                </button>
+                
+            </div>
+
+            <button class="menu-toggle" aria-label="Toggle Menu">
+                <i class="fa-solid fa-bars"></i>
+            </button>
+        </nav>
+    </header>
+
+
+    <!-- Header Session Done! -->
+
+
+    <!-- Small Para Section Starts Here! -->
+
+
+    <section class="monuments-section">
+        <h1>Explore Iconic Monuments</h1>
+<p>
+  Journey through time as you explore the world’s most iconic monuments. From timeless ancient wonders to striking modern architecture, each site offers a glimpse into the cultural soul, artistic mastery, and historical depth of its region. Discover the stories etched in stone, and experience the legacy that shaped civilizations.
+</p>
+
+        <div class="button-container">
+            <button class="region-button" onclick="scrollToSection('north')">North</button>
+            <button class="region-button" onclick="scrollToSection('south')">South</button>
+            <button class="region-button" onclick="scrollToSection('east')">East</button>
+            <button class="region-button" onclick="scrollToSection('west')">West</button>
+        </div>
+    </section>
+
+
+    <!-- Main Content Section North Starts Here! -->
+
+    <Section class="main-section main-section-02" id="north">
+        <div class="main-content main-content-02">
+            <p>Explore Our Top Tours</p>
+            <h2> <b> North Zone</b></h2>
+        </div>
+
+        <!-- Card Container -->
+        <div class="card-container card-container-02">
+            <!-- Card 01 -->
+            <!-- Card Container -->
+            <div class="card-container">
+                <!-- Card 01 -->
+                <div class="card card-02">
+                    <img src="../Assets/Images/Monuments imgs/North/North-Img-01.jfif" alt="Waimea Bay" />
+                    <div class="card-content">
+                        <h3>Waimea Bay</h3>
+                        <p class="ratings">
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star-half"></i>
+                            10 Ratings
+                        </p>
+                        <p>
+                            Famous for its massive winter waves and golden sand, Waimea Bay is a surfer's paradise in
+                            Hawaii.
+
+
+                        </p>
+                        <hr>
+                        <span class="location">
+                            <p><i class="fa-solid fa-map"></i> Oahu, Hawaii</p> <a class="btn book-now-btn"
+                                href="./details.html">Book Now</a>
+
+                        </span>
+                    </div>
+                </div>
+                <!-- Card 02 -->
+                <div class="card card-02">
+                    <img src="../Assets/Images/Monuments imgs/North/North-Img-02.webp" alt="Navagio Beach" />
+                    <div class="card-content">
+                        <h3>Navagio Beach</h3>
+                        <p class="ratings">
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star-half"></i>
+                            16 Ratings
+                        </p>
+                        <p>
+                            Enclosed by cliffs and accessible only by boat, this Greek beach is famous for its shipwreck
+                            scene.
+                        </p>
+                        <hr>
+                        <span class="location">
+                            <p><i class="fa-solid fa-map"></i> Zakynthos, Greece</p> <a class="btn book-now-btn"
+                                href="./details.html">Book Now</a>
+
+                        </span>
+                    </div>
+                </div>
+                <!-- Card 03 -->
+                <div class="card card-02">
+                    <img src="../Assets/Images/Monuments imgs/North/North-Img-03.jpg" alt="Reynisfjara Beach" />
+                    <div class="card-content">
+                        <h3>Reynisfjara Beach</h3>
+                        <p class="ratings">
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star-half"></i>
+                            15 Ratings
+                        </p>
+                        <p>
+                            Known for its black sand and dramatic waves, Reynisfjara offers a hauntingly
+                            coastal view.
+
+
+                        </p>
+                        <hr>
+                        <span class="location">
+                            <p><i class="fa-solid fa-map"></i> Vik, Iceland</p> <a class="btn book-now-btn"
+                                href="./details.html">Book Now</a>
+
+                        </span>
+                    </div>
+                </div>
+                <!-- Card 04 -->
+                <div class="card card-02">
+                    <img src="../Assets/Images/Monuments imgs/North/North-Img-4.jpg" alt="Whitehaven Beach" />
+                    <div class="card-content">
+                        <h3>Whitehaven Beach</h3>
+                        <p class="ratings">
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            32 Ratings
+                        </p>
+                        <p>
+                            With white silica sand and turquoise water, this is one of the world’s most
+                            scenic beaches.
+                        </p>
+                        <hr>
+                        <span class="location">
+                            <p><i class="fa-solid fa-map"></i> Whitsunday Islands, Aust <a class="btn book-now-btn"
+                                    href="./details.html">Book Now</a>
+
+                        </span>
+                    </div>
+                </div>
+                <!-- Card 05 -->
+                <div class="card card-02">
+                    <img src="../Assets/Images/Monuments imgs/North/North-Img-05.jpg" alt="Cannon Beach" />
+                    <div class="card-content">
+                        <h3>Cannon Beach</h3>
+                        <p class="ratings">
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-regular fa-star"></i>
+                            23 Ratings
+                        </p>
+                        <p>
+                            A charming beach with iconic Haystack Rock and picturesque sunsets along the Oregon Coast.
+                        </p>
+                        <hr>
+                        <span class="location">
+                            <p><i class="fa-solid fa-map"></i> Oregon, USA</p> <a class="btn book-now-btn"
+                                href="./details.html">Book Now</a>
+
+                        </span>
+                    </div>
+                </div>
+                <!-- Card 06 -->
+                <div class="card card-02">
+                    <img src="../Assets/Images/Monuments imgs/North/North-Img-06.webp" alt="Lofoten Beaches" />
+                    <div class="card-content">
+                        <h3>Lofoten Beaches</h3>
+                        <p class="ratings">
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star-half"></i>
+                            <i class="fa-regular fa-star"></i>
+                            14 Ratings
+                        </p>
+                        <p>
+                            Arctic circle beaches surrounded by rugged peaks and glowing northern skies — a true wonder.
+                        </p>
+                        <hr>
+                        <span class="location">
+                            <p><i class="fa-solid fa-map"></i>Lofoten, Norway</p> <a class="btn book-now-btn"
+                                href="./details.html">Book Now</a>
+
+                        </span>
+                    </div>
+                </div>
+
+                <!-- Card 07 -->
+                <div class="card card-02">
+                    <img src="../Assets/Images/Monuments imgs/North/North-Img-07.jpg" alt="Polihale Beach" />
+                    <div class="card-content">
+                        <h3>Polihale Beach</h3>
+                        <p class="ratings">
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star-half"></i>
+                            <i class="fa-regular fa-star"></i>
+                            10 Ratings
+                        </p>
+                        <p>
+                            A remote Hawaiian beach with vast sand dunes, peaceful vibes, and magical sunsets.
+                        </p>
+                        <hr>
+                        <span class="location">
+                            <p><i class="fa-solid fa-map"></i> Kauai, Hawaii</p> <a class="btn book-now-btn"
+                                href="./details.html">Book Now</a>
+
+                        </span>
+                    </div>
+                </div>
+                <!-- Card 08 -->
+                <div class="card card-02">
+                    <img src="../Assets/Images/Monuments imgs/North/North-Img-08.jpg" alt="Sand Beach" />
+                    <div class="card-content">
+                        <h3>Sand Beach</h3>
+                        <p class="ratings">
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star-half"></i>
+                            <i class="fa-regular fa-star"></i>
+                            17 Ratings
+                        </p>
+                        <p>
+                            Nestled between rocky shores, this small beach offers cold Atlantic waves and scenic
+                            mountain views.
+                        </p>
+                        <hr>
+                        <span class="location">
+                            <p><i class="fa-solid fa-map"></i>Maine, USA</p> <a
+                                class="btn book-now-btn" href="./details.html"> Book Now </a>
+
+                        </span>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+
+    </Section>
+
+
+    <!-- Main Content Section North Done! -->
+
+
+
+
+
+    <!-- Main Content Section South Starts Here! -->
+
+    <Section class="main-section main-section-02" id="south">
+        <div class="main-content main-content-02">
+
+            <h2> <b>South Zone</b></h2>
+        </div>
+
+        <!-- Card Container -->
+        <div class="card-container card-container-02">
+            <!-- Card 01 -->
+            <!-- Card Container -->
+            <div class="card-container">
+                <!-- Card 01 -->
+                <div class="card card-02">
+                    <img src="../Assets/Images/Monuments imgs/South/South-Img-1.jpg" alt="Bondi Beach" />
+                    <div class="card-content">
+                        <h3>Bondi Beach</h3>
+                        <p class="ratings">
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            35 Ratings
+                        </p>
+                        <p>
+                            Australia's most iconic beach, known for surfing, golden sands, and vibrant beachfront
+                            culture.
+                        </p>
+                        <hr>
+                        <span class="location">
+                            <p><i class="fa-solid fa-map"></i> Sydney, Australia</p>
+                            <a class="btn book-now-btn" href="./details.html"> Book Now</a>
+                        </span>
+                    </div>
+                </div>
+                <!-- Card 02 -->
+                <div class="card card-02">
+                    <img src="../Assets/Images/Monuments imgs/South/South-Img-2.jfif" alt="Camps Bay Beach" />
+                    <div class="card-content">
+                        <h3>Camps Bay Beach</h3>
+                        <p class="ratings">
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star-half"></i>
+                            26 Ratings
+                        </p>
+                        <p>
+                            Backed by the Twelve Apostles mountains, this South African beach is perfect for sunset
+                            lovers.
+                        </p>
+                        <hr>
+                        <span class="location">
+                            <p><i class="fa-solid fa-map"></i> Cape Town, South Africa</p> <a class="btn book-now-btn"
+                                href="./details.html">Book Now</a>
+
+                        </span>
+                    </div>
+                </div>
+                <!-- Card 03 -->
+                <div class="card card-02">
+                    <img src="../Assets/Images/Monuments imgs/South/South-Img-3.jpg" alt="Anse Source d'Argent" />
+                    <div class="card-content">
+                        <h3>Anse Source d'Argent</h3>
+                        <p class="ratings">
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            30 Ratings
+                        </p>
+                        <p>
+                            With pink sand and giant granite boulders, this beach is one of the most photographed
+                            in the world.
+                        </p>
+                        <hr>
+                        <span class="location">
+                            <p><i class="fa-solid fa-map"></i> La Digue, Seychelles</p> <a class="btn book-now-btn"
+                                href="./details.html">Book Now</a>
+
+                        </span>
+                    </div>
+                </div>
+                <!-- Card 04 -->
+                <div class="card card-02">
+                    <img src="../Assets/Images/Monuments imgs/South/South-Img-4..jpg" alt=" White Sand Beach" />
+                    <div class="card-content">
+                        <h3> White Sand Beach</h3>
+                        <p class="ratings">
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star-half"></i>
+                            21 Ratings
+                        </p>
+                        <p>
+                            Peaceful and scenic, this hidden gem offers turquoise waters and relaxing vibes.
+                        </p>
+                        <hr>
+                        <span class="location">
+                            <p><i class="fa-solid fa-map"></i> Zanzibar, Tanzania</p> <a class="btn book-now-btn"
+                                href="./details.html">Book Now</a>
+
+                        </span>
+                    </div>
+                </div>
+
+                <!-- Card 05 -->
+                <div class="card card-02">
+                    <img src="../Assets/Images/Monuments imgs/South/South-Img-5.jpg" alt=" White Sand Beach" />
+                    <div class="card-content">
+                        <h3> Clifton Beach</h3>
+                        <p class="ratings">
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star-half"></i>
+                            21 Ratings
+                        </p>
+                        <p>
+                            Peaceful and scenic, this hidden gem offers turquoise waters and relaxing vibes.
+                        </p>
+                        <hr>
+                        <span class="location">
+                            <p><i class="fa-solid fa-map"></i> Zanzibar, Tanzania</p> <a class="btn book-now-btn"
+                                href="./details.html">Book Now</a>
+
+                        </span>
+                    </div>
+                </div>
+
+                <!-- Card 06 -->
+                <div class="card card-02">
+                    <img src="../Assets/Images/Monuments imgs/South/South-Img-6.jpg" alt=" Muizenberg Beach" />
+                    <div class="card-content">
+                        <h3> Muizenberg Beach</h3>
+                        <p class="ratings">
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star-half"></i>
+                            17 Ratings
+                        </p>
+                        <p>
+                            Famous for its colorful beach huts and consistent waves, this beach is great for beginner
+                            surfers.
+                        </p>
+                        <hr>
+                        <span class="location">
+                            <p><i class="fa-solid fa-map"></i> Cape Town, South Africa</p> <a class="btn book-now-btn"
+                                href="./details.html">Book Now</a>
+
+                        </span>
+                    </div>
+                </div>
+
+                <!-- Card 07 -->
+                <div class="card card-02">
+                    <img src="../Assets/Images/Monuments imgs/South/South-Img-7.jpg" alt=" Cable Beach" />
+                    <div class="card-content">
+                        <h3> Cable Beach</h3>
+                        <p class="ratings">
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star-half"></i>
+                            23 Ratings
+                        </p>
+                        <p>
+                            Known for camel rides at sunset, Cable Beach stretches 22 km along the Indian Ocean.
+                        </p>
+                        <hr>
+                        <span class="location">
+                            <p><i class="fa-solid fa-map"></i> Broome, Australia</p> <a class="btn book-now-btn"
+                                href="./details.html">Book Now</a>
+
+                        </span>
+                    </div>
+                </div>
+
+                <!-- Card 08 -->
+
+                <div class="card card-02">
+                    <img src="../Assets/Images/Monuments imgs/South/South-Img-8.jpg" alt=" Diani Beach
+" />
+                    <div class="card-content">
+                        <h3> Diani Beach
+                        </h3>
+                        <p class="ratings">
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star-half"></i>
+                            20 Ratings
+                        </p>
+                        <p>
+                            A dreamy stretch of coastline with coral reefs and lush palm trees, perfect for diving and
+                            relaxation.
+                        </p>
+                        <hr>
+                        <span class="location">
+                            <p><i class="fa-solid fa-map"></i> Kenya</p> <a class="btn book-now-btn"
+                                href="./details.html">Book Now</a>
+
+                        </span>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+
+
+
+    </Section>
+
+
+    <!-- Main Content Section South Done! -->
+
+
+
+    <!-- Main Content Section East Starts Here! -->
+
+    <Section class="main-section main-section-02" id="east">
+        <div class="main-content main-content-02">
+
+            <h2> <b>East Zone</b></h2>
+        </div>
+
+        <!-- Card Container -->
+        <div class="card-container card-container-02">
+            <!-- Card 01 -->
+            <!-- Card Container -->
+            <div class="card-container">
+                <!-- Card 01 -->
+                <div class="card card-02">
+                    <img src="../Assets/Images/Monuments imgs/East/East-Img-1.jpg" alt="Maya Bay" />
+                    <div class="card-content">
+                        <h3>Maya Bay</h3>
+                        <p class="ratings">
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            36 Ratings
+                        </p>
+                        <p>
+                            Surrounded by steep cliffs and waters, this Thai beach gained fame from the movie
+                            The Beach.
+                        </p>
+                        <hr>
+                        <span class="location">
+                            <p><i class="fa-solid fa-map"></i> Phi Phi Islands, Thailand</p> <a class="btn book-now-btn"
+                                href="./details.html">Book Now</a>
+
+                        </span>
+                    </div>
+                </div>
+                <!-- Card 02 -->
+                <div class="card card-02">
+                    <img src="../Assets/Images/Monuments imgs/East/East-Img-2.jfif" alt="Havelock Island" />
+                    <div class="card-content">
+                        <h3>Havelock Island</h3>
+                        <p class="ratings">
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star-half"></i>
+                            28 Ratings
+                        </p>
+                        <p>
+                            Renowned for its white sands and coral reefs, it's one of the most beautiful beaches in
+                            India.
+                        </p>
+                        <hr>
+                        <span class="location">
+                            <p><i class="fa-solid fa-map"></i> Andaman & Nicobar, India</p> <a class="btn book-now-btn"
+                                href="./details.html">Book Now</a>
+
+                        </span>
+                    </div>
+                </div>
+                <!-- Card 03 -->
+                <div class="card card-02">
+                    <img src="../Assets/Images/Monuments imgs/East/East-Img-3.jfif" alt="Pink Beach" />
+                    <div class="card-content">
+                        <h3>Pink Beach</h3>
+                        <p class="ratings">
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star-half"></i>
+                            22 Ratings
+                        </p>
+                        <p>
+                            Named for its soft pink sand, this beach is a serene escape surrounded by vibrant marine
+                            life.
+                        </p>
+                        <hr>
+                        <span class="location">
+                            <p><i class="fa-solid fa-map"></i> Komodo Island, Indonesia</p> <a class="btn book-now-btn"
+                                href="./details.html">Book Now</a>
+
+                        </span>
+                    </div>
+                </div>
+                <!-- Card 04 -->
+                <div class="card card-02">
+                    <img src="../Assets/Images/Monuments imgs/East/East-Img-4.webp" alt="Da Nang Beach" />
+                    <div class="card-content">
+                        <h3>Da Nang Beach</h3>
+                        <p class="ratings">
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star-half"></i>
+                            19 Ratings
+                        </p>
+                        <p>
+                            A long stretch of golden coast with calm waters, popular for both tourists and locals.
+                        </p>
+                        <hr>
+                        <span class="location">
+                            <p><i class="fa-solid fa-map"></i> Da Nang, Vietnam</p> <a class="btn book-now-btn"
+                                href="./details.html">Book Now</a>
+
+                        </span>
+                    </div>
+                </div>
+
+                <!-- Card 05 -->
+                <div class="card card-02">
+                    <img src="../Assets/Images/Monuments imgs/East/East-Img-5.webp" alt="Okinawa Beaches" />
+                    <div class="card-content">
+                        <h3>Okinawa Beaches</h3>
+                        <p class="ratings">
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star-half"></i>
+                            25 Ratings
+                        </p>
+                        <p>
+                            Crystal-clear waters, coral reefs, and white sand define these tropical Japanese beaches.
+                        </p>
+                        <hr>
+                        <span class="location">
+                            <p><i class="fa-solid fa-map"></i> Okinawa, Japan</p> <a class="btn book-now-btn"
+                                href="./details.html">Book Now</a>
+
+                        </span>
+                    </div>
+                </div>
+
+                <!-- Card 06 -->
+                <div class="card card-02">
+                    <img src="../Assets/Images/Monuments imgs/East/East-Img-6.jfif" alt="Nha Trang Beach" />
+                    <div class="card-content">
+                        <h3>Nha Trang Beach</h3>
+                        <p class="ratings">
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star-half"></i>
+                            <i class="fa-regular fa-star"></i>
+                            14 Ratings
+                        </p>
+                        <p>
+                            A lively beach with palm-lined boulevards, ideal for sunbathing and water sports.
+                        </p>
+                        <hr>
+                        <span class="location">
+                            <p><i class="fa-solid fa-map"></i> Nha Trang, Vietnam</p> <a class="btn book-now-btn"
+                                href="./details.html">Book Now</a>
+
+                        </span>
+                    </div>
+                </div>
+
+                <!-- Card 07 -->
+                <div class="card card-02">
+                    <img src="../Assets/Images/Monuments imgs/East/East-Img-7.jpg" alt="White Beach" />
+                    <div class="card-content">
+                        <h3>White Beach</h3>
+                        <p class="ratings">
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            31 Ratings
+                        </p>
+                        <p>
+                            Known for its stunning sunsets and powdery white sand, it's the crown jewel of Boracay.
+                        </p>
+                        <hr>
+                        <span class="location">
+                            <p><i class="fa-solid fa-map"></i> Boracay, Philippines</p> <a class="btn book-now-btn"
+                                href="./details.html">Book Now</a>
+
+                        </span>
+                    </div>
+                </div>
+
+                <!-- Card 08 -->
+                <div class="card card-02">
+                    <img src="../Assets/Images/Monuments imgs/East/East-Img-8.jpg" alt="Ngapali Beach" />
+                    <div class="card-content">
+                        <h3>Ngapali Beach</h3>
+                        <p class="ratings">
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star-half"></i>
+                            16 Ratings
+                        </p>
+                        <p>
+                            A peaceful, palm-lined beach perfect for relaxation away from the usual tourist buzz.
+                        </p>
+                        <hr>
+                        <span class="location">
+                            <p><i class="fa-solid fa-map"></i> Rakhine State, Myanmar</p> <a class="btn book-now-btn"
+                                href="./details.html">Book Now</a>
+
+                        </span>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+
+
+
+    </Section>
+
+
+    <!-- Main Content Section East Done! -->
+
+
+
+
+    <!-- Main Content Section West Starts Here! -->
+
+    <Section class="main-section main-section-02" id="west">
+        <div class="main-content main-content-02">
+
+            <h2> <b>West Zone</b></h2>
+        </div>
+
+        <!-- Card Container -->
+        <div class="card-container card-container-02">
+            <!-- Card 01 -->
+            <!-- Card Container -->
+            <div class="card-container">
+                <!-- Card 01 -->
+                <div class="card card-02">
+                    <img src="../Assets/Images/Monuments imgs/West/West-Img-1.jpeg" alt=" Santa Monica Beach" />
+                    <div class="card-content">
+                        <h3> Santa Monica Beach</h3>
+                        <p class="ratings">
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-regular fa-star"></i>
+                            27 Ratings
+                        </p>
+                        <p>
+                            Famous for its lively pier, golden sand, and perfect sunsets, Monica is a classic
+                            beach experience.
+                        </p>
+                        <hr>
+                        <span class="location">
+                            <p><i class="fa-solid fa-map"></i> California, USA</p> <a class="btn book-now-btn"
+                                href="./details.html">Book Now</a>
+
+                        </span>
+                    </div>
+                </div>
+                <!-- Card 02 -->
+                <div class="card card-02">
+                    <img src="../Assets/Images/Monuments imgs/West/West-Img-2.webp" alt="Venice Beach" />
+                    <div class="card-content">
+                        <h3>Venice Beach</h3>
+                        <p class="ratings">
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star-half"></i>
+                            <i class="fa-regular fa-star"></i>
+                            21 Ratings
+                        </p>
+                        <p>
+                            A vibrant beach with skate parks, street performers, and an iconic boardwalk full of energy.
+                        </p>
+                        <hr>
+                        <span class="location">
+                            <p><i class="fa-solid fa-map"></i> Los Angeles, California, USA</p> <a
+                                class="btn book-now-btn" href="./details.html">Book Now</a>
+
+                        </span>
+                    </div>
+                </div>
+                <!-- Card 03 -->
+                <div class="card card-02">
+                    <img src="../Assets/Images/Monuments imgs/West/West-Img-3.jpg" alt="Balandra Beach" />
+                    <div class="card-content">
+                        <h3>Balandra Beach</h3>
+                        <p class="ratings">
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star-half"></i>
+                            22 Ratings
+                        </p>
+                        <p>
+                            A hidden gem with shallow turquoise waters and white sands, perfect for kayaking.
+                        </p>
+                        <hr>
+                        <span class="location">
+                            <p><i class="fa-solid fa-map"></i> Baja California Sur, Mexico</p> <a
+                                class="btn book-now-btn" href="./details.html">Book Now</a>
+
+                        </span>
+                    </div>
+                </div>
+                <!-- Card 04 -->
+                <div class="card card-02">
+                    <img src="../Assets/Images/Monuments imgs/South/South-Img-4..jpg" alt=" Manuel Antonio Beach" />
+                    <div class="card-content">
+                        <h3> Manuel Antonio Beach</h3>
+                        <p class="ratings">
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            32 Ratings
+                        </p>
+                        <p>
+                            A tropical paradise surrounded by rainforest, wildlife, and soft sandy shores.
+                        </p>
+                        <hr>
+                        <span class="location">
+                            <p><i class="fa-solid fa-map"></i> Costa Rica</p> <a class="btn book-now-btn"
+                                href="./details.html">Book Now</a>
+
+                        </span>
+                    </div>
+                </div>
+                <!-- Card 05 -->
+                <div class="card card-02">
+                    <img src="../Assets/Images/Monuments imgs/West/West-Img-5.avif" alt="Cabo San Lucas Beach" />
+                    <div class="card-content">
+                        <h3>Cabo San Lucas Beach</h3>
+                        <p class="ratings">
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star-half"></i>
+                            26 Ratings
+                        </p>
+                        <p>
+                            Popular for beach resorts, dramatic sea cliffs, and crystal-clear water for snorkeling.
+                        </p>
+                        <hr>
+                        <span class="location">
+                            <p><i class="fa-solid fa-map"></i>Baja California, Mexico</p> <a class="btn book-now-btn"
+                                href="./details.html">Book Now</a>
+
+                        </span>
+                    </div>
+                </div>
+                <!-- Card 06 -->
+                <div class="card card-02">
+                    <img src="../Assets/Images/Monuments imgs/West/West-Img-6.jpg" alt=" La Jolla Shores" />
+                    <div class="card-content">
+                        <h3> La Jolla Shores</h3>
+                        <p class="ratings">
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star-half"></i>
+                            24 Ratings
+                        </p>
+                        <p>
+                            A family-friendly beach perfect for picnics, kayaking, and spotting sea lions nearby.
+
+
+                        </p>
+                        <hr>
+                        <span class="location">
+                            <p><i class="fa-solid fa-map"></i>San Diego, California, USA</p> <a class="btn book-now-btn"
+                                href="./details.html">Book Now</a>
+
+                        </span>
+                    </div>
+                </div>
+                <!-- Card 07 -->
+                <div class="card card-02">
+                    <img src="../Assets/Images/Monuments imgs/West/West-Img-7.jpg" alt=" Carmel Beach" />
+                    <div class="card-content">
+                        <h3> Carmel Beach</h3>
+                        <p class="ratings">
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-regular fa-star"></i>
+                            32 Ratings
+                        </p>
+                        <p>
+                            Known for its scenic beauty and pet-friendly vibe, Carmel is a tranquil and romantic 
+                            spot.
+                        </p>
+                        <hr>
+                        <span class="location">
+                            <p><i class="fa-solid fa-map"></i>California, USA</p> <a
+                                class="btn book-now-btn" href="./details.html">Book Now</a>
+
+                        </span>
+                    </div>
+                </div>
+
+                <!-- Card 08 -->
+                <div class="card card-02">
+                    <img src="../Assets/Images/Monuments imgs/West/West-Img-8.jpg" alt="  Pfeiffer Beach" />
+                    <div class="card-content">
+                        <h3> Pfeiffer Beach</h3>
+                        <p class="ratings">
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-regular fa-star"></i>
+                            18 Ratings
+                        </p>
+                        <p>
+                            Famous for its purple-hued sand and dramatic rock formations along Big Sur’s rugged
+                            coastline.
+                        </p>
+                        <hr>
+                        <span class="location">
+                            <p><i class="fa-solid fa-map"></i> Big Sur, California, USA</p> <a class="btn book-now-btn"
+                                href="./details.html">Book Now</a>
+
+                        </span>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+
+
+
+    </Section>
+
+
+    <!-- Main Content Section West Done! -->
+    <!-- 
+    </section> -->
+
+    <!-- Reach on top button -->
+    <button id="backToTop" title="Go to top">
+        <i class="fa-solid fa-arrow-up"></i>
+    </button>
+
+
+
+    <!-- Footer Session Starts! -->
+
+    <footer class="footer">
+        <div class="footer-container">
+            <div class="footer-section">
+                <h3> Beauty of Beaches</h3>
+                <p>Discover the world’s most stunning beaches, one wave at a time. Dive into beauty, zone by zone.</p>
+                <span class="social-icons">
+                    <i class="fa-brands fa-instagram"></i>
+                    <i class="fa-brands fa-facebook"></i>
+                    <i class="fa-brands fa-youtube"></i>
+                    <i class="fa-brands fa-twitter"></i>
+                </span>
+            </div>
+            <div class="footer-section">
+                <h3>Information</h3>
+                <ul>
+                    <li><a href="../index.html">Home</a></li>
+                    <li><a href="./about.html">About</a></li>
+                    <li><a href="./monuments-zone.html">Monuments</a></li>
+                    <li><a href="./gallery.html">Gallery</a></li>
+                    <li><a href="./feedback.html">Feedback</a></li>
+                    <li><a href="./contact.html">Contact</a></li>
+                    <li><a href="../Assets/PDF Detail File/Beauty of Beaches.pdf"><i class="fa-solid fa-file-arrow-down"></i> Download Our
+                        Company Profile</a></li>
+                </ul>
+            </div>
+            <div class="footer-section">
+                <h3>Customer Support</h3>
+                <ul>
+                    <li><a href="./contact.html">FAQs</a></li>
+                    <li><a href="./monuments-zone.html">Monuments</a></li>
+                    <li><a href="./gallery.html">Gallery</a></li>
+                    <li><a href="./feedback.html">Feedback</a></li>
+                    <li><a href="./contact.html">Contact</a></li>
+                </ul>
+            </div>
+            <div class="footer-section">
+                <h3>Have Any Questions</h3>
+                <span>
+                    <p><i class="fa-solid fa-map-marker-alt"></i> Location</p>
+                    <p><i class="fa-solid fa-phone"></i> +1 258 325 954</p>
+                    <p><i class="fa-solid fa-envelope"></i> info@beautyofbeaches.com</p>
+                </span>
+            </div>
+    
+        </div>
+    </footer>
+
+    <!-- Footer Session Done! -->
+
+
+
+    <!-- Flickity Script Link -->
+    <script src="https://unpkg.com/flickity@2/dist/flickity.pkgd.min.js"></script>
+
+</body>
+
+<!-- JS Code Here -->
+<script src="../JS Files/script.js"></script>
+
+<!-- Monuments JS Code Here -->
+<script src="../JS Files/monuments.js"></script>
+
+</html>

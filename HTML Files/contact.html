@@ -1,0 +1,237 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Beauty Of Beaches</title>
+    <!-- Custom CSS File -->
+    <link rel="stylesheet" href="../CSS Files/contact.css">
+    <!-- Font Awesome CSS File -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"
+        integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300&family=Ubuntu:wght@300&display=swap"
+        rel="stylesheet">
+    <!-- Favicon -->
+    <link rel="icon" href="../Assets/Images/Logo Img.svg" type="image/x-icon">
+
+    <!-- Flickity CDN Link -->
+    <link rel="stylesheet" href="https://unpkg.com/flickity@2/dist/flickity.min.css" />
+
+
+</head>
+
+<body>
+
+    <!-- Header Session Starts Here -->
+    <header>
+        <nav class="nav-container">
+            <div class="logo">
+                <a href="../index.html"><img src="../Assets/Images/Logo Img.svg" alt="Logo"></a>
+            </div>
+            <div class="nav-links-wrapper">
+                <ul class="nav-links">
+                    <li><a href="../index.html">Home</a></li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="../HTML Files/monuments-zone.html"
+                            id="monumentsDropdown" role="button" data-toggle="dropdown" aria-haspopup="true"
+                            aria-expanded="false">
+                            Monuments Zone
+                        </a>
+
+                        <!--Due to Bootstrap Not Working on this page the dropdown is having issues.
+                            So we decided to comment it out.-->
+
+                        <!-- <div class="dropdown-menu" aria-labelledby="monumentsDropdown">
+                            <a class="dropdown-item" href="../HTML Files/monuments-zone.html">East</a>
+                            <a class="dropdown-item" href="../HTML Files/monuments-zone.html">West</a>
+                            <a class="dropdown-item" href="../HTML Files/monuments-zone.html">North</a>
+                            <a class="dropdown-item" href="../HTML Files/monuments-zone.html">South</a>
+                        </div> -->
+                    </li>
+                    <li><a href="../HTML Files/about.html">About us</a></li>
+                    <li><a href="../HTML Files/gallery.html">Gallery</a></li>
+                    <li><a href="../HTML Files/feedback.html">Feedback</a></li>
+                    <li><a href="../HTML Files/contact.html">Contact Us</a></li>
+                </ul>
+            </div>
+            <div class="icon-container">
+                <button class="icon-button" aria-label="User Profile">
+                    <i class="fa-solid fa-user"></i>
+                </button>
+                <button class="icon-button" aria-label="Search">
+                    <i class="fa-solid fa-search"></i>
+                </button>
+
+            </div>
+
+            <button class="menu-toggle" aria-label="Toggle Menu">
+                <i class="fa-solid fa-bars"></i>
+            </button>
+        </nav>
+    </header>
+
+
+    <!-- Header Session Done! -->
+
+    <!-- Contact Us Session  -->
+
+    <section class="contact-section">
+
+        <h1>Contact Us</h1>
+        <p>If you have any questions, comments, or feedback, please feel free to reach out to us using the form below.
+            We would love to hear from you!</p>
+
+        <div class="contact-form-container">
+            <form id="contact-form">
+                <label for="name">Name:</label>
+                <input type="text" id="name" name="name" required>
+
+                <label for="email">Email:</label>
+                <input type="email" id="email" name="email" required>
+
+                <label for="message">Message:</label>
+                <textarea id="message" name="message" rows="5" required></textarea>
+
+                <button type="submit">Send Message</button>
+            </form>
+        </div>
+
+
+
+
+
+        <div class="map-container">
+            <h2>Our Location</h2>
+            <iframe
+                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3151.835434509198!2d144.9537353153163!3d-37.81627997975157!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x6ad642af0f11f3b3%3A0x5045675218ceed0!2sYour%20Location!5e0!3m2!1sen!2sus!4v1616161616161!5m2!1sen!2sus"
+                width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy">
+            </iframe>
+        </div>
+    </section>
+
+   
+    
+    <div class="contact-info">
+        <h3>Get in Touch</h3>
+        <p><i class="fa-solid fa-map-marker-alt"></i> 5th Floor, Seaside Tower,
+            1200 Ocean Drive, Miami Beach, FL 33139,
+            United States</p>
+        <p><i class="fa-solid fa-phone"></i>+1 (800) 123-4567
+
+        </p>
+        <p><i class="fa-solid fa-envelope"></i>info@beautyofbeaches.com
+
+        </p>
+    </div>
+
+
+
+    <!-- Contact Us Session Done! -->
+
+
+
+
+
+
+
+
+
+
+    <!-- Section 03 (Download Our Information!) -->
+
+    <section class="our-info-file">
+        <div class="info-div">
+            <h1>Discover the Beauty of Beaches</h1>
+            <p>
+                Beaches are nature's paradise, where the golden sands meet the azure waves. The gentle sound of the
+                surf, the warmth of the sun on your skin, and the breathtaking sunsets create an idyllic escape from the
+                hustle and bustle of everyday life. Whether you seek adventure through water sports or relaxation under
+                a palm tree, beaches offer something for everyone.
+            </p>
+            <a href="../Assets/PDF Detail File/Beauty of Beaches.pdf" download class="info-section-btn">
+                <i class="fa-solid fa-file-arrow-down"></i> Download Our Company Profile
+            </a>
+
+        </div>
+    </section>
+
+
+
+
+    <!-- Reach on top button -->
+    <button id="backToTop" title="Go to top">
+        <i class="fa-solid fa-arrow-up"></i>
+    </button>
+
+
+    <!-- Footer Session Starts! -->
+
+    <footer class="footer">
+        <div class="footer-container">
+            <div class="footer-section">
+                <h3> Beauty of Beaches</h3>
+                <p>Discover the world’s most stunning beaches, one wave at a time. Dive into beauty, zone by zone.</p>
+                <span class="social-icons">
+                    <i class="fa-brands fa-instagram"></i>
+                    <i class="fa-brands fa-facebook"></i>
+                    <i class="fa-brands fa-youtube"></i>
+                    <i class="fa-brands fa-twitter"></i>
+                </span>
+            </div>
+            <div class="footer-section">
+                <h3>Information</h3>
+                <ul>
+                    <li><a href="../index.html">Home</a></li>
+                    <li><a href="./about.html">About</a></li>
+                    <li><a href="./monuments-zone.html">Monuments</a></li>
+                    <li><a href="./gallery.html">Gallery</a></li>
+                    <li><a href="./feedback.html">Feedback</a></li>
+                    <li><a href="./contact.html">Contact</a></li>
+                    <li><a href="../Assets/PDF Detail File/Beauty of Beaches.pdf"><i
+                                class="fa-solid fa-file-arrow-down"></i> Download Our
+                            Company Profile</a></li>
+                </ul>
+            </div>
+            <div class="footer-section">
+                <h3>Customer Support</h3>
+                <ul>
+                    <li><a href="./contact.html">FAQs</a></li>
+                    <li><a href="./monuments-zone.html">Monuments</a></li>
+                    <li><a href="./gallery.html">Gallery</a></li>
+                    <li><a href="./feedback.html">Feedback</a></li>
+                    <li><a href="./contact.html">Contact</a></li>
+                </ul>
+            </div>
+            <div class="footer-section">
+                <h3>Have Any Questions</h3>
+                <span>
+                    <p><i class="fa-solid fa-map-marker-alt"></i> 5th Floor, Seaside Tower,
+                        1200 Ocean Drive, Miami Beach, FL 33139,
+                        United States</p>
+                    <p><i class="fa-solid fa-phone"></i>+1 (800) 123-4567
+
+                    </p>
+                    <p><i class="fa-solid fa-envelope"></i>info@beautyofbeaches.com
+
+                    </p>
+                </span>
+            </div>
+
+        </div>
+    </footer>
+
+    <!-- Footer Session Done! -->
+
+
+
+
+
+</body>
+
+<!-- JS Code Here -->
+<script src="../JS Files/script.js"></script>
+
+</html>
